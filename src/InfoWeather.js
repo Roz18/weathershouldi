@@ -1,5 +1,5 @@
 import React from "react";
-import FrormattedDate from "./FormattedDate";
+import FormattedDate from "./FormattedDate";
 import Icon from "./WeatherIcons";
 
 export default function InfoWeather(props) {
@@ -8,7 +8,7 @@ export default function InfoWeather(props) {
       <div className="Intro">
         <ul>
           <h1>{props.data.city}</h1>
-          <FrormattedDate date={props.data.icon} />
+          <FormattedDate date={props.data.date} />
         </ul>
       </div>
       <div className="row">
@@ -18,20 +18,20 @@ export default function InfoWeather(props) {
               <Icon code={props.data.icon} alt={props.data.description} />
             </div>
             <div className="float-left">
-              <span className="temprature">
-                {Math.round(props.data.temperature)}
+              <span className="temperature">
+                {Math.round(parseFloat(props.data.temperature))}
               </span>
               <span className="unit">C</span>
             </div>
 
-            <p className="text-capitalize">{props.data.discription}</p>
+            <p className="text-capitalize">{props.data.description}</p>
           </div>
         </div>
         <div className="col-6">
           <div className="Extra">
             <ul>
-              <p>Humidity:{props.data.humidity}%</p>
-              <p>Wind speed:{props.data.wind}km/h</p>
+              <p>Humidity: {props.data.humidity}%</p>
+              <p>Wind speed: {props.data.wind} km/h</p>
             </ul>
           </div>
         </div>

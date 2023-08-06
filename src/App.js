@@ -8,11 +8,6 @@ function App() {
       <div className="container">
         <Weather />
       </div>
-      <footer>
-        {/* <a href="" target="_blank" alt="Github Respository"> 
-          Github
-        </a>*/}
-      </footer>
     </div>
   );
 }

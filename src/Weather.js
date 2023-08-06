@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Weather.css";
 import InfoWeather from "./InfoWeather";
@@ -6,7 +6,10 @@ import InfoWeather from "./InfoWeather";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
-  console.log(city);
+
+  useEffect(() => {
+    setCity(props.defaultCity);
+  }, [props.defaultCity]);
 
   function handleResponse(response) {
     setWeatherData({
@@ -63,8 +66,5 @@ export default function Weather(props) {
         <InfoWeather data={weatherData} />
       </div>
     );
-  } else {
-    search();
-    return "laoding...";
   }
 }
