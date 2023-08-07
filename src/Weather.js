@@ -66,5 +66,8 @@ export default function Weather(props) {
         <InfoWeather data={weatherData} />
       </div>
     );
+  } else {
+    search();
+    return "Loading...";
   }
 }
