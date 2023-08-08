@@ -16,10 +16,14 @@ export default function InfoWeather(props) {
         <div className="col-6">
           <div className="tempBox">
             <div className="float-left">
-              <Icon code={props.data.icon} alt={props.data.description} />
+              <Icon
+                code={props.data.icon}
+                alt={props.data.description}
+                size={50}
+              />
             </div>
             <div className="float-left">
-              <WeatherTemp code={props.data.temperature} />
+              <WeatherTemp celsius={props.data.temperature} />
             </div>
 
             <p className="text-capitalize">{props.data.description}</p>
