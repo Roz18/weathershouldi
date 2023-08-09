@@ -22,20 +22,40 @@
   line-height: 1.5;
   border-color: rgb(89, 91, 131);
 }
+h1 {
+  font-size: 38px;
+}
 .intro {
   margin-top: 15px;
 }
 .WeatherUnit,
 .dateTime,
 p {
-  font-size: 13px;
+  font-size: 15px;
 }
-.iconMain {
-  float: left;
+.row {
+  padding: 0px;
+}
+.iconMian {
+  margin: auto;
+  margin-top: 25px;
+  float: right;
+  height: 58px;
+  width: 55px;
 }
 .tempIcon {
-  float: right;
+  float: left;
+  display: flex;
+  margin-top: 13px;
 }
-/* .temperature */
-/* .unit */
-/* icon canvas */
+.temperature {
+  font-size: 50px;
+}
+.Extra {
+  padding: 10px;
+}
+p {
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+}
