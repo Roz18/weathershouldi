@@ -2,13 +2,13 @@ import React from "react";
 
 export default function FrormattedDate(props) {
   let days = [
+    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
-    "Sunday",
   ];
   let day = days[props.date.getDay()];
   let hours = props.date.getHours();
@@ -20,7 +20,7 @@ export default function FrormattedDate(props) {
     minutes = `0${minutes}`;
   }
   return (
-    <div>
+    <div className="dateTime">
       {day} {hours}:{minutes}
     </div>
   );

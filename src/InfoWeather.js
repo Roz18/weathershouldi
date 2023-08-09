@@ -1,4 +1,5 @@
 import React from "react";
+import "./Weather.css";
 import FormattedDate from "./FormattedDate";
 import Icon from "./WeatherIcons";
 import WeatherTemp from "./WeatherTemp";
@@ -6,29 +7,29 @@ import WeatherTemp from "./WeatherTemp";
 export default function InfoWeather(props) {
   return (
     <div className="info">
-      <div className="Intro">
+      <div className="intro">
         <ul>
           <h1>{props.data.city}</h1>
           <FormattedDate date={props.data.date} />
         </ul>
       </div>
       <div className="row">
-        <div className="col-6">
-          <div className="tempBox">
-            <div className="float-left">
-              <Icon
-                code={props.data.icon}
-                alt={props.data.description}
-                size={50}
-              />
-            </div>
-            <div className="float-left">
-              <WeatherTemp celsius={props.data.temperature} />
-            </div>
-
-            <p className="text-capitalize">{props.data.description}</p>
+        <div className="col-3">
+          <div className="tempIcon">
+            <WeatherTemp celsius={props.data.temperature} />
           </div>
         </div>
+        <div className="col-3">
+          <div className="iconMian">
+            <Icon
+              code={props.data.icon}
+              alt={props.data.description}
+              size={45}
+            />
+          </div>
+          <p className="text-capitalize">{props.data.description}</p>
+        </div>
+
         <div className="col-6">
           <div className="Extra">
             <ul>

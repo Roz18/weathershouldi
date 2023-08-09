@@ -12,7 +12,6 @@ export default function WeatherForecast(props) {
   }, [props.coordinates]);
 
   function handleResponse(response) {
-    console.log(response.data);
     setForecast(response.data.daily);
 
     setLoaded(true);
@@ -24,7 +23,7 @@ export default function WeatherForecast(props) {
         <div className="row">
           {forecast &&
             forecast.map(function (dailyForecast, index) {
-              if (index < 5) {
+              if (index < 7) {
                 return (
                   <div className="col" key={index}>
                     <DayForcasts data={dailyForecast} />

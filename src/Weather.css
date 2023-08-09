@@ -1,0 +1,41 @@
+#button {
+  color: #fff;
+  background-color: rgb(89, 91, 131);
+  border-color: rgb(89, 91, 131);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: auto;
+}
+:hover #button {
+  color: #fff;
+  background-color: rgb(59, 61, 100);
+  border-color: rgb(59, 61, 100);
+}
+:active #button {
+  border-color: rgb(59, 61, 100);
+  box-shadow: inset rgb(59, 61, 100);
+}
+#searchForm {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+  border-color: rgb(89, 91, 131);
+}
+.intro {
+  margin-top: 15px;
+}
+.WeatherUnit,
+.dateTime,
+p {
+  font-size: 13px;
+}
+.iconMain {
+  float: left;
+}
+.tempIcon {
+  float: right;
+}
+/* .temperature */
+/* .unit */
+/* icon canvas */
