@@ -53,6 +53,8 @@ p {
 }
 .Extra {
   padding: 10px;
+  text-align: start;
+  padding-left: 35px;
 }
 p {
   line-height: 1.1;
