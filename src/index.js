@@ -11,6 +11,12 @@ const root = createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
+    <div>
+      <footer>
+        Code by Rusanne Visagie
+        <a href="https://github.com/Roz18/weathershouldi">GitHub</a>
+      </footer>
+    </div>
   </React.StrictMode>
 );
 
