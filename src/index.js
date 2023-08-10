@@ -14,7 +14,7 @@ root.render(
     <div>
       <footer>
         Code by Rusanne Visagie
-        <a href="https://github.com/Roz18/weathershouldi">GitHub</a>
+        <a href="https://github.com/Roz18/weathershouldi"> GitHub</a>
       </footer>
     </div>
   </React.StrictMode>

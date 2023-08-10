@@ -9,6 +9,13 @@
   color: rgb(6, 9, 48);
   font-size: 13px;
 }
+
 a {
-  color: #9f5ec0;
+  color: rgb(143, 76, 184);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(1, 103, 138);
+  text-decoration: underline;
 }
